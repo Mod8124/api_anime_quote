@@ -1,0 +1,267 @@
+* {
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    font-family:initial;
+}
+
+:root {
+    --background : rgba( 31, 38, 135, 0.9);
+}
+
+.container {
+    width:100%;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: var(--background);
+    background-image: url("https://source.unsplash.com/1920x900/?japan,anime");
+    background-size: cover;
+    align-items: center;
+}
+
+#container {
+    width: 50%;
+    margin:0 auto;
+    text-align: center;
+    height: 55%;
+    background: rgba( 189, 16, 224, 0.10 );
+    box-shadow: 0 8px 32px 10px rgba( 31, 38, 135, 0.37 );
+    backdrop-filter: blur( 8.0px );
+    -webkit-backdrop-filter: blur( 8.0px );
+    border-radius: 10px;
+    border: 1px solid rgba( 255, 255, 255, 0.18 );
+}
+
+h1 {
+    padding-top: 40px;
+    color:white;
+    font-size: 3.5em;
+    padding-bottom: 15px;
+    font-style: oblique;
+}
+
+.quote {
+    display: flex;
+    flex-wrap: wrap;
+    width: 80%;
+    margin: 0 auto;
+}
+
+#quote {
+    flex:94%;
+    color:white;
+    font-size: 1.9em;
+    height: 200px;
+    overflow: hidden;
+    font-weight: 500;
+    font-style: oblique;
+    margin: 0 auto;
+
+}
+
+.commas {
+    flex:3%;
+    color:#9013FE;
+    font-size: 1.4em;
+    font-weight: 500;
+    font-style: oblique;
+    font-weight: bolder;
+}
+
+.commas2 {
+    flex:3%;
+    color:#9013FE;
+    font-size: 1.4em;
+    font-weight: 600;
+    font-style: oblique;
+    font-weight: bolder;
+    align-self: flex-end;
+}
+
+.author {
+    width: 20%;
+    margin: 0 auto;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+#author {
+    flex:90%;
+    color: white;
+    font-size: 1.5em;
+    padding-bottom: 26px;
+    margin: 0 auto;
+}
+
+#sy {
+    flex:10%;
+    font-size: 1.3em;
+    color:#9013FE;
+    margin: 0 auto;
+}
+
+#btn {
+    background-color: #9013FE;
+    color:white;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+    padding: 15px 35px 15px 35px;
+    border:none;
+    box-shadow: 0 8px 32px 2px rgba( 31, 38, 135, 0.37 );
+    transition: 1s all ease-in-out;
+}
+
+#btn:hover {
+    background-color: rgba( 31, 38, 135, 0.7);
+    box-shadow: 0 8px 32px 2px #9013FE;
+}
+
+@media screen and (max-width:1250px) and (min-width:1120px) {
+    #container {
+        width: 60%;
+        height: 56%;
+    }
+
+    #quote {
+        font-size: 1.6em;
+    }
+}
+
+@media screen and (max-width:1119px) and (min-width:1000px) {
+    #container {
+        width: 60%;
+        height: 60%;
+    }
+
+    #quote {
+        font-size: 1.6em;
+    }
+}
+
+@media screen and (max-width:999px) and (min-width:800px) {
+    #container {
+        width: 60%;
+        height: 60%;
+        overflow: hidden;
+    }
+
+    #quote {
+        font-size: 1.3em;
+    }
+}
+
+@media screen and (max-width:799px) and (min-width:600px) {
+    #container {
+        width: 70%;
+        height: 60%;
+        overflow: hidden;
+    }
+
+    .quote {
+        width: 90%;
+    }
+
+    #quote {
+        font-size: 1.2em;
+        height: 220px;
+    }
+
+    .author {
+        width: 30%;
+    }
+
+    #author {
+        font-size: 1.1em;
+    }
+}
+
+@media screen and (max-width:599px) and (min-width:500px) {
+    #container {
+        width: 80%;
+        height: 60%;
+        overflow: hidden;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .quote {
+        width: 90%;
+    }
+
+    #quote {
+        font-size: 1.1em;
+        height: 220px;
+    }
+
+    .author {
+        width: 36%;
+    }
+
+    #author {
+        font-size: 1em;
+    }
+}
+
+
+@media screen and (max-width:499px) and (min-width:341px){
+    #container {
+        width: 80%;
+        height: 80%;
+        overflow: hidden;
+    }
+
+    h1 {
+        font-size: 2.5em;
+    }
+
+    .quote {
+        width: 90%;
+    }
+
+    #quote {
+        font-size: 1.1em;
+        height: 300px;
+    }
+
+    .author {
+        width: 60%;
+        padding-top: 10px;
+    }
+
+    #author {
+        font-size: 1em;
+    }
+}
+
+@media screen and (max-width:340px) {
+    #container {
+        width: 80%;
+        height: 80%;
+        overflow: hidden;
+    }
+
+    h1 {
+        font-size: 2.2em;
+    }
+
+    .quote {
+        width: 90%;
+    }
+
+    #quote {
+        font-size: 1em;
+        height: 380px;
+    }
+
+    .author {
+        width: 60%;
+        padding-top: 10px;
+    }
+
+    #author {
+        font-size: 1em;
+    }
+}
